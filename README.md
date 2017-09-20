@@ -15,13 +15,24 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 
 Install it
 
-    npm install --save <git-repo>
+    npm install --save  npm install --save https://github.com/ashleydavis/typescript-template.git
+
+
+Install a particular version
+
+     npm install --save https://github.com/ashleydavis/typescript-template.git#version
+
+Install a particular tag
+
+    npm install --save https://github.com/ashleydavis/typescript-template.git#tag
+
 
 Import and use it (in a TypeScript file):
 
     import { ExampleClass } from 'typescript-template';
     
     var example = new ExampleClass();
+    console.log(example.returnsTrue());
 
 Import and use it (from JavaScript):
 
@@ -29,6 +40,7 @@ Import and use it (from JavaScript):
     var ExampleClass = typescriptTemplate.ExampleClass;
 
     var example = new ExampleClass();
+    console.log(example.returnsTrue());
 
 ### As a command line app
 
