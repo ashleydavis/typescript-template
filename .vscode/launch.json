@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "TypeScript",
+            "name": "Main",
             "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/cli.ts",
