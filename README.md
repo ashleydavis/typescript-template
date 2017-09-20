@@ -9,13 +9,26 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 - Mocha tests.
 - Debug configuration for command line app and Mocha tests.
 
+## Usage
+
+When you want to start a new TypeScript app:
+- Copy this repo
+- Search and replace 'typescript-template' to 'your-app-name'
+- Install your own custom dependencies
+- Add your custom code.
+- Add to Github or Bitbucket (private repos work)
+
+You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
+
+Read on for instructions on how to install the module/app, build, test and debug. In all the following instructions replaced 'typescript-template' with 'your-app-name'.
+
 ## Installation
 
 ### As a module
 
 Install it
 
-    npm install --save  npm install --save https://github.com/ashleydavis/typescript-template.git
+    npm install --save https://github.com/ashleydavis/typescript-template.git
 
 
 Install a particular version
