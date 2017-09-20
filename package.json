@@ -8,6 +8,9 @@
     "test": "ts-mocha test/**/*.ts",
     "test:watch": "ts-mocha test/**/*.ts --watch"
   },
+  "bin": {
+    "typescript-template-cli": "./bin/cli"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://ashleydavis@github.com/ashleydavis/typescript-template.git"
