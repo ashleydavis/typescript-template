@@ -46,11 +46,11 @@ Import and use it (from JavaScript):
 
 Install it
 
-    npm install -g <git-repo>
+    npm install -g https://github.com/ashleydavis/typescript-template.git
 
 Run it
 
-    typescript-template [args]
+    typescript-template-cli [args]
 
 ## Building the code
 
