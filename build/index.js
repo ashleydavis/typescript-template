@@ -7,6 +7,9 @@ var ExampleClass = /** @class */ (function () {
     ExampleClass.prototype.test = function () {
         console.log("Test: " + moment().format('YYYY-DD-MM'));
     };
+    ExampleClass.prototype.returnsTrue = function () {
+        return true;
+    };
     return ExampleClass;
 }());
 exports.ExampleClass = ExampleClass;
