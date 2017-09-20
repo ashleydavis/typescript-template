@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TypeScript",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/cli.ts",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                // Your args here.
+            ],
+            "skipFiles": [
+                "node_modules/**/*.js"
+            ],
+            "outFiles": [
+                "${workspaceRoot}/build/**/*.js"
+            ],
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "internalConsole",
+            "trace": "all"
+        }
+    ]
+}
