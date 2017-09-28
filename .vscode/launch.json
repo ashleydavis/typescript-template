@@ -53,7 +53,7 @@
             "sourceMaps": true,
             "stopOnEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
-            "protocol": "inspector",
-        },
+            "protocol": "inspector"
+        }
     ]
 }
