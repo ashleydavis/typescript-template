@@ -16,11 +16,11 @@ When you want to start a new TypeScript app:
 - Search and replace 'typescript-template' to 'your-app-name'
 - Install your own custom dependencies
 - Add your custom code.
-- Add to Github or Bitbucket (private repos work)
+- Add to Github or Bitbucket (private git repos work with 'npm install')
 
 You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
 
-Read on for instructions on how to install the module/app, build, test and debug. In all the following instructions replaced 'typescript-template' with 'your-app-name'.
+Read on for instructions on how to install the module/app, build, test and debug. In all the following instructions replace 'typescript-template' with 'your-app-name'.
 
 ## Installation
 
