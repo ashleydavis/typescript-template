@@ -10,8 +10,8 @@
     "clean-build": "rm -rf build/* && tsc",
     "build:watch": "tsc --watch",
     "clean-build:watch": "rm -rf build/* && tsc --watch",
-    "test": "ts-mocha test/**/*.ts",
-    "test:watch": "ts-mocha test/**/*.ts --watch"
+    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register test/**/*.ts",
+    "test:watch": "mocha --compilers ts:ts-node/register,tsx:ts-node/register test/**/*.ts --watch --watch-extensions ts"
   },
   "bin": {
     "typescript-template-cli": "./bin/cli"
