@@ -10,8 +10,9 @@
     "clean-build": "rm -rf build/* && tsc",
     "build:watch": "tsc --watch",
     "clean-build:watch": "rm -rf build/* && tsc --watch",
-    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register test/**/*.ts",
-    "test:watch": "mocha --compilers ts:ts-node/register,tsx:ts-node/register test/**/*.ts --watch --watch-extensions ts"
+    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register src/test/**/*.ts",
+    "test:watch": "mocha --compilers ts:ts-node/register,tsx:ts-node/register src/test/**/*.ts --watch --watch-extensions ts",
+    "prepublishOnly": "tsc"
   },
   "bin": {
     "typescript-template-cli": "./bin/cli"

@@ -13,5 +13,5 @@ var ExampleClass = /** @class */ (function () {
     return ExampleClass;
 }());
 exports.ExampleClass = ExampleClass;
-//TODO: Code for your reusable code module goes here. 
+//TODO: Code for your reusable code module goes here.
 //# sourceMappingURL=index.js.map
