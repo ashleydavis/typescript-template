@@ -29,18 +29,18 @@
     },
     "homepage": "https://github.com/ashleydavis/typescript-template#readme",
     "dependencies": {
-        "moment": "2.18.1"
+        "moment": "2.22.2"
     },
     "devDependencies": {
-        "@types/chai": "4.0.4",
-        "@types/mocha": "2.2.43",
-        "@types/node": "8.0.28",
-        "chai": "4.1.2",
-        "mocha": "3.5.3",
-        "nyc": "11.8.0",
-        "source-map-support": "0.5.6",
-        "ts-node": "3.3.0",
-        "typescript": "2.5.2"
+        "@types/chai": "4.1.6",
+        "@types/mocha": "5.2.5",
+        "@types/node": "10.11.4",
+        "chai": "4.2.0",
+        "mocha": "5.2.0",
+        "nyc": "13.0.1",
+        "source-map-support": "0.5.9",
+        "ts-node": "7.0.1",
+        "typescript": "3.1.1"
     },
     "nyc": {
         "extension": [
