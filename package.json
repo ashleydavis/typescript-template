@@ -5,6 +5,8 @@
     "main": "build/index.js",
     "types": "build/index.d.ts",
     "scripts": {
+        "start": "node ./build/index.js",
+        "start:dev": "nodemon",
         "clean": "rm -rf build/*",
         "build": "tsc",
         "clean-build": "rm -rf build/* && tsc",
