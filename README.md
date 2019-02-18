@@ -23,9 +23,7 @@ When you want to start a new TypeScript app:
 
 You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
 
-## Installation
-
-### Get the code
+## Get the code
 
 Clone or download and unpack the repo.
 
