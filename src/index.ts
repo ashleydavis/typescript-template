@@ -1,13 +1,12 @@
-
-import * as moment from 'moment';
+import * as moment from "moment";
 
 export class ExampleClass {
 
-    test(): void {
-        console.log("Test: " + moment().format('YYYY-DD-MM'));
+    public test(): void {
+        console.log("Test: " + moment().format("YYYY-DD-MM"));
     }
 
-    returnsTrue(): boolean {
+    public returnsTrue(): boolean {
         return true;
     }
 

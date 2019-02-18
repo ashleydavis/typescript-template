@@ -1,5 +1,4 @@
-
-import { ExampleClass } from './index';
+import { ExampleClass } from "./index";
 
 (new ExampleClass()).test();
 

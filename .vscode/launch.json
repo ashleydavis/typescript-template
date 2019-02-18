@@ -8,7 +8,7 @@
             "name": "Main",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/cli.ts",
+            "program": "${workspaceRoot}/src/cli.ts",
             "cwd": "${workspaceRoot}",
             "env": {
                 "NODE_ENV": "development"
@@ -27,33 +27,44 @@
             "console": "internalConsole",
             "trace": "all"
         },
-
         {
-            "name": "Mocha",
+            "name": "Test All",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
             "cwd": "${workspaceRoot}",
             "env": {
                 "NODE_ENV": "development"
             },
             "args": [
-                "-u",
-                "tdd",
-                "--timeout",
-                "999999",
-                "--colors",
-                "-r",
-                "ts-node/register",
-                "${relativeFile}"
-            ],
-            "skipFiles": [
-                "node_modules/**/*.js"
+                "--config",
+                "jest.config.js",
+                "--runInBand"
             ],
             "sourceMaps": true,
             "stopOnEntry": false,
-            "internalConsoleOptions": "openOnSessionStart",
-            "protocol": "inspector"
-        }
+            "console": "integratedTerminal",
+            "disableOptimisticBPs": true
+       },
+       {
+            "name": "Test Current",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "args": [
+                "${relativeFile}",
+                "--config",
+                "jest.config.js",
+                "--runInBand"
+            ],
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "disableOptimisticBPs": true
+       }
     ]
 }

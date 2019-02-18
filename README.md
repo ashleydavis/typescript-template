@@ -6,127 +6,111 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 
 - Example module.
 - Example command line app (installable via npm install -g)
-- Mocha tests.
-- Debug configuration for command line app and Mocha tests.
+- Testing using Jest.
+- Linting using tslint.
+- Debugging setup for VS Code.
 
 ## Usage
 
 When you want to start a new TypeScript app:
+
 - Copy this repo
-- Search and replace 'typescript-template' to 'your-app-name'
+- Search and replace 'typescript-template' to 'your-module-name' across the entire repo
 - Install your own custom dependencies
 - Add your custom code.
 - Add to Github or Bitbucket (private git repos work with 'npm install')
+- Publish to npm using `npm publish`.
 
 You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
 
-Read on for instructions on how to install the module/app, build, test and debug. In all the following instructions replace 'typescript-template' with 'your-app-name'.
+## Installation
+
+### Get the code
+
+Clone or download and unpack the repo.
+
+Install local dependencies
+
+    cd typescript-template
+    npm install
 
 ## Installation
 
-### As a module
+Once you publish you can install via npm and use it from TypeScript or JavaScript or from the command line.
 
-Install it
-
-    npm install --save https://github.com/ashleydavis/typescript-template.git
-
-
-Install a particular version
-
-     npm install --save https://github.com/ashleydavis/typescript-template.git#version
-
-Install a particular tag
-
-    npm install --save https://github.com/ashleydavis/typescript-template.git#tag
-
+### From code
 
 Import and use it (in a TypeScript file):
 
-    import { ExampleClass } from 'typescript-template';
+```typescript
+    import { ExampleClass } from 'your-module-name';
     
     var example = new ExampleClass();
     console.log(example.returnsTrue());
+```
 
 Import and use it (from JavaScript):
 
-    var typescriptTemplate = require('typescript-template');
-    var ExampleClass = typescriptTemplate.ExampleClass;
+```javascript
+    var yourModule = require('your-module-name');
+    var ExampleClass = yourModule.ExampleClass;
 
     var example = new ExampleClass();
     console.log(example.returnsTrue());
+```
 
-### As a command line app
+### From command line
 
-Install it
+You can also run your published module as a command line app.
 
-    npm install -g https://github.com/ashleydavis/typescript-template.git
+For example, install it globally:
 
-Run it
+    npm install -g your-module-name
 
-    typescript-template-cli [args]
+Then run it:
+
+    your-module-name-cli [args]
 
 ## Building the code
 
-    Open folder in Visual Studio Code and hit Ctrl+Shift+B
+Open folder in Visual Studio Code and hit Ctrl+Shift+B
 
 Or
 
-    tsc [-w]
-
-Which requires:
-
-    npm install -g typescript
-
+    cd typescript-template
+    npm run build
 
 ## Debugging
 
-### Debugging the command line app
-
 - Open in Visual Studio Code.
 - Select 'Main' debug configuration.
+- Select the 'Test All' or 'Test Current' debug configuration to debug all tests or the current test file.
 - Set your breakpoints.
 - Hit F5 to run.
 
-### Debugging the tests
+## Build and run
 
-- Open in Visual Studio Code.
-- Select 'Mocha' debug configuration.
-- Open the test source file to execute.
-- Set your breakpoints.
-- Hit F5 to run.
+Compile the application:
 
-## Running without Building
+    npm run build
 
-Install some global modules:
+The run the compiled JavaScript:
 
-    npm install -g ts-node
-    npm install -g mocha
-    npm install -g ts-mocha
+    npm start
+
+## Running without building
 
 Run the command line app directly:
 
-    ts-node cli.ts
+    npm start:dev
 
 Run tests directly:
 
-    ts-mocha test/**/*.ts [--watch]
-
-Or:
-
-    npm run test
+    npm test
 
 Or:
 
     npm run test:watch
 
-## Running the code after building
 
-Run the command line app:
-
-    cd build
-    node cli.js
-
-Run the tests:
-
-    cd build
-    mocha
+**Checkout** package.json for more scripts!
