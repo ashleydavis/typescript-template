@@ -18,8 +18,8 @@ When you want to start a new TypeScript app:
 - Search and replace 'typescript-template' to 'your-module-name' across the entire repo
 - Install your own custom dependencies
 - Add your custom code.
-- Add to Github or Bitbucket (private git repos work with 'npm install')
-- Publish to npm using `npm publish`.
+- Add to your own Github or Bitbucket repo (you can npm install from a Git repo! Even a private one!)
+- If necessary, publish to npm using `npm publish`.
 
 You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
 
@@ -31,7 +31,7 @@ Clone or download and unpack the repo.
 
 Install local dependencies
 
-    cd typescript-template
+    cd your-module-name
     npm install
 
 ## Installation
@@ -43,20 +43,20 @@ Once you publish you can install via npm and use it from TypeScript or JavaScrip
 Import and use it (in a TypeScript file):
 
 ```typescript
-    import { ExampleClass } from 'your-module-name';
-    
-    var example = new ExampleClass();
-    console.log(example.returnsTrue());
+import { ExampleClass } from 'your-module-name';
+
+var example = new ExampleClass();
+console.log(example.returnsTrue());
 ```
 
 Import and use it (from JavaScript):
 
 ```javascript
-    var yourModule = require('your-module-name');
-    var ExampleClass = yourModule.ExampleClass;
+var yourModule = require('your-module-name');
+var ExampleClass = yourModule.ExampleClass;
 
-    var example = new ExampleClass();
-    console.log(example.returnsTrue());
+var example = new ExampleClass();
+console.log(example.returnsTrue());
 ```
 
 ### From command line
