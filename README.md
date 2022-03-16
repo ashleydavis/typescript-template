@@ -9,7 +9,6 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 - Example module.
 - Example command line app (installable via npm install -g)
 - Testing using Jest.
-- Linting using tslint.
 - Debugging setup for VS Code.
 
 ## Usage
