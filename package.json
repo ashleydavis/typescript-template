@@ -6,7 +6,9 @@
     "types": "build/index.d.ts",
     "scripts": {
         "start": "node ./build/cli.js",
+        "s": "npm start",
         "start:dev": "nodemon",
+        "sd": "npm run start:dev",
         "c": "npm run clean",
         "clean": "rm -rf build/*",
         "b": "npm run build",
