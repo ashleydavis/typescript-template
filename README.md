@@ -16,10 +16,11 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 When you want to start a new TypeScript app:
 
 - Copy this repo
-- Search and replace 'typescript-template' to 'your-module-name' across the entire repo
+- In `package.json`, change `typescript-template-cli` to `you-cmd-name` the name of the your cli program (once installed on a user's computer). 
+- Across the whole repo, search and replace `typescript-template` to `your-module-name`.
 - Install your own custom dependencies
 - Add your custom code.
-- Add to your own Github or Bitbucket repo (you can npm install from a Git repo! Even a private one!)
+- Comit it all to your own repo.
 - If necessary, publish to npm using `npm publish`.
 
 You now have a reusable code module and/or command line app that you can 'npm install' and share with your team mates.
@@ -30,8 +31,10 @@ Clone or download and unpack the repo.
 
 Install local dependencies
 
-    cd your-module-name
-    npm install
+```bash
+cd your-module-name
+npm install
+```
 
 ## Installation
 
@@ -64,20 +67,26 @@ You can also run your published module as a command line app.
 
 For example, install it globally:
 
-    npm install -g your-module-name
+```bash
+npm install -g your-module-name
+```
 
 Then run it:
 
-    your-module-name-cli [args]
+```bash
+your-module-name-cli [args]
+```
 
-## Building the code
+## Compiling the TypeScript code
 
 Open folder in Visual Studio Code and hit Ctrl+Shift+B
 
 Or
 
-    cd typescript-template
-    npm run build
+```bash
+cd your-module-name
+npm run compile
+```
 
 ## Debugging
 
@@ -91,25 +100,34 @@ Or
 
 Compile the application:
 
-    npm run build
+```bash
+npm run build
+```
 
 The run the compiled JavaScript:
 
-    npm start
+```bash
+npm start
+```
 
 ## Running without building
 
 Run the command line app directly:
 
-    npm start:dev
+```bash
+npm start:dev
+```
 
 Run tests directly:
 
-    npm test
+```bash
+npm test
+```
 
 Or:
 
-    npm run test:watch
+```bash
+npm run test:watch
+```
 
-
-**Checkout** package.json for more scripts!
+See package.json for more scripts!
