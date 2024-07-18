@@ -6,6 +6,7 @@ A template for a TypeScript app. To make it easier to start a new app without ha
 
 ## Features
 
+- Tested against Node.js v20.
 - Example module.
 - Example command line app (installable via npm install -g)
 - Testing using Jest.
